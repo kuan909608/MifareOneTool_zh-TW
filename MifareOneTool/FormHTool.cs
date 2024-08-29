@@ -1,4 +1,4 @@
-﻿using MifareOneTool.Properties;
+using MifareOneTool.Properties;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

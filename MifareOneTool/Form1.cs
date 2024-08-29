@@ -1,4 +1,4 @@
-﻿using MifareOneTool.Properties;
+using MifareOneTool.Properties;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -172,6 +172,8 @@ namespace MifareOneTool
             psi.UseShellExecute = false;
             psi.RedirectStandardOutput = true;
             psi.RedirectStandardError = true;
+            psi.StandardOutputEncoding = Encoding.GetEncoding("gb2312");
+            psi.StandardErrorEncoding = Encoding.GetEncoding("gb2312");
             lprocess = true;
             BackgroundWorker b = (BackgroundWorker)sender;
             process = Process.Start(psi); 
@@ -257,6 +259,8 @@ namespace MifareOneTool
             psi.UseShellExecute = false;
             psi.RedirectStandardOutput = true;
             psi.RedirectStandardError = true;
+            psi.StandardOutputEncoding = Encoding.GetEncoding("gb2312");
+            psi.StandardErrorEncoding = Encoding.GetEncoding("gb2312");
             lprocess = true;
             BackgroundWorker b = (BackgroundWorker)sender;
             process = Process.Start(psi);
@@ -272,6 +276,12 @@ namespace MifareOneTool
             b.ReportProgress(100, Resources._运行完毕);
         }
 
+        static void SaveWithEncoding(string fileName, string content, Encoding encoding)
+        {
+            File.WriteAllText(fileName, content, encoding);
+            Console.WriteLine($"Saved {fileName} with encoding {encoding.WebName}");
+        }
+
         string omfd = "";
 
         private string GetUID()
@@ -281,6 +291,8 @@ namespace MifareOneTool
             psi.UseShellExecute = false;
             psi.RedirectStandardOutput = true;
             psi.RedirectStandardError = true;
+            psi.StandardOutputEncoding = Encoding.GetEncoding("gb2312");
+            psi.StandardErrorEncoding = Encoding.GetEncoding("gb2312");
             Process p = Process.Start(psi);
             p.WaitForExit();
             string rawStr = p.StandardOutput.ReadToEnd();
@@ -379,6 +391,8 @@ namespace MifareOneTool
             psi.UseShellExecute = false;
             psi.RedirectStandardOutput = true;
             psi.RedirectStandardError = true;
+            psi.StandardOutputEncoding = Encoding.GetEncoding("gb2312");
+            psi.StandardErrorEncoding = Encoding.GetEncoding("gb2312");
             lprocess = true;
             BackgroundWorker b = (BackgroundWorker)sender;
             process = Process.Start(psi);
@@ -512,6 +526,8 @@ namespace MifareOneTool
             psi.UseShellExecute = false;
             psi.RedirectStandardOutput = true;
             psi.RedirectStandardError = true;
+            psi.StandardOutputEncoding = Encoding.GetEncoding("gb2312");
+            psi.StandardErrorEncoding = Encoding.GetEncoding("gb2312");
             lprocess = true;
             BackgroundWorker b = (BackgroundWorker)sender;
             process = Process.Start(psi);
@@ -569,6 +585,8 @@ namespace MifareOneTool
             psi.UseShellExecute = false;
             psi.RedirectStandardOutput = true;
             psi.RedirectStandardError = true;
+            psi.StandardOutputEncoding = Encoding.GetEncoding("gb2312");
+            psi.StandardErrorEncoding = Encoding.GetEncoding("gb2312");
             lprocess = true;
             BackgroundWorker b = (BackgroundWorker)sender;
             process = Process.Start(psi);
@@ -624,6 +642,8 @@ namespace MifareOneTool
             psi.UseShellExecute = false;
             psi.RedirectStandardOutput = true;
             psi.RedirectStandardError = true;
+            psi.StandardOutputEncoding = Encoding.GetEncoding("gb2312");
+            psi.StandardErrorEncoding = Encoding.GetEncoding("gb2312");
             lprocess = true;
             BackgroundWorker b = (BackgroundWorker)sender;
             process = Process.Start(psi);
@@ -662,6 +682,8 @@ namespace MifareOneTool
             psi.UseShellExecute = false;
             psi.RedirectStandardOutput = true;
             psi.RedirectStandardError = true;
+            psi.StandardOutputEncoding = Encoding.GetEncoding("gb2312");
+            psi.StandardErrorEncoding = Encoding.GetEncoding("gb2312");
             lprocess = true;
             BackgroundWorker b = (BackgroundWorker)sender;
             process = Process.Start(psi);
@@ -702,6 +724,8 @@ namespace MifareOneTool
             psi.UseShellExecute = false;
             psi.RedirectStandardOutput = true;
             psi.RedirectStandardError = true;
+            psi.StandardOutputEncoding = Encoding.GetEncoding("gb2312");
+            psi.StandardErrorEncoding = Encoding.GetEncoding("gb2312");
             lprocess = true;
             BackgroundWorker b = (BackgroundWorker)sender;
             process = Process.Start(psi);
@@ -762,6 +786,8 @@ namespace MifareOneTool
             psi.UseShellExecute = false;
             psi.RedirectStandardOutput = true;
             psi.RedirectStandardError = true;
+            psi.StandardOutputEncoding = Encoding.GetEncoding("gb2312");
+            psi.StandardErrorEncoding = Encoding.GetEncoding("gb2312");
             lprocess = true;
             BackgroundWorker b = (BackgroundWorker)sender;
             process = Process.Start(psi);
@@ -819,6 +845,8 @@ namespace MifareOneTool
             psi.UseShellExecute = false;
             psi.RedirectStandardOutput = true;
             psi.RedirectStandardError = true;
+            psi.StandardOutputEncoding = Encoding.GetEncoding("gb2312");
+            psi.StandardErrorEncoding = Encoding.GetEncoding("gb2312");
             lprocess = true;
             BackgroundWorker b = (BackgroundWorker)sender;
             process = Process.Start(psi);
@@ -929,6 +957,8 @@ namespace MifareOneTool
             psi.UseShellExecute = false;
             psi.RedirectStandardOutput = true;
             psi.RedirectStandardError = true;
+            psi.StandardOutputEncoding = Encoding.GetEncoding("gb2312");
+            psi.StandardErrorEncoding = Encoding.GetEncoding("gb2312");
             lprocess = true;
             BackgroundWorker b = (BackgroundWorker)sender;
             process = Process.Start(psi);
@@ -986,6 +1016,8 @@ namespace MifareOneTool
             psi.UseShellExecute = false;
             psi.RedirectStandardOutput = true;
             psi.RedirectStandardError = true;
+            psi.StandardOutputEncoding = Encoding.GetEncoding("gb2312");
+            psi.StandardErrorEncoding = Encoding.GetEncoding("gb2312");
             lprocess = true;
             BackgroundWorker b = (BackgroundWorker)sender;
             process = Process.Start(psi); 
@@ -1038,6 +1070,8 @@ namespace MifareOneTool
             psi.UseShellExecute = false;
             psi.RedirectStandardOutput = true;
             psi.RedirectStandardError = true;
+            psi.StandardOutputEncoding = Encoding.GetEncoding("gb2312");
+            psi.StandardErrorEncoding = Encoding.GetEncoding("gb2312");
             lprocess = true;
             BackgroundWorker b = (BackgroundWorker)sender;
             process = Process.Start(psi);
@@ -1200,6 +1234,8 @@ namespace MifareOneTool
             psi.UseShellExecute = false;
             psi.RedirectStandardOutput = true;
             psi.RedirectStandardError = true;
+            psi.StandardOutputEncoding = Encoding.GetEncoding("gb2312");
+            psi.StandardErrorEncoding = Encoding.GetEncoding("gb2312");
             lprocess = true;
             BackgroundWorker b = (BackgroundWorker)sender;
             process = Process.Start(psi); 
@@ -1399,6 +1435,8 @@ namespace MifareOneTool
             psi.UseShellExecute = false;
             psi.RedirectStandardOutput = true;
             psi.RedirectStandardError = true;
+            psi.StandardOutputEncoding = Encoding.GetEncoding("gb2312");
+            psi.StandardErrorEncoding = Encoding.GetEncoding("gb2312");
             lprocess = true;
             BackgroundWorker b = (BackgroundWorker)sender;
             process = Process.Start(psi); 
@@ -1532,6 +1570,14 @@ namespace MifareOneTool
         private void ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (comboBox1.SelectedItem.ToString() == Resources.标准)
+            {
+                System.Threading.Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo("zh-TW");
+                System.Threading.Thread.CurrentThread.CurrentCulture = CultureInfo.GetCultureInfo("zh-TW");
+                Properties.Settings.Default.Language = "zh-TW";
+                Properties.Settings.Default.Save();
+                Application.Restart();
+            }
+            else if (comboBox1.SelectedItem.ToString() == Resources.簡體中文)
             {
                 System.Threading.Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo("zh-cn");
                 System.Threading.Thread.CurrentThread.CurrentCulture = CultureInfo.GetCultureInfo("zh-cn");

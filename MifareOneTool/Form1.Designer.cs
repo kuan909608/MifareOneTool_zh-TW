@@ -1,4 +1,4 @@
-﻿namespace MifareOneTool
+namespace MifareOneTool
 {
     partial class Form1
     {
@@ -751,8 +751,8 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::MifareOneTool.Properties.Resources.round_chevron_right_black_24dp;
             resources.ApplyResources(this.pictureBox2, "pictureBox2");
+            this.pictureBox2.Image = global::MifareOneTool.Properties.Resources.round_chevron_right_black_24dp;
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.TabStop = false;
             // 

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -552,5 +552,8 @@
   </data>
   <data name="错误" xml:space="preserve">
     <value>Ошибка</value>
+  </data>
+  <data name="簡體中文" xml:space="preserve">
+    <value>簡體中文</value>
   </data>
 </root>

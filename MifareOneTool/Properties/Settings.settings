@@ -1,4 +1,4 @@
-﻿<?xml version='1.0' encoding='utf-8'?>
+<?xml version='1.0' encoding='utf-8'?>
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="MifareOneTool.Properties" GeneratedClassName="Settings">
   <Profiles />
   <Settings>
@@ -15,7 +15,7 @@
       <Value Profile="(Default)">True</Value>
     </Setting>
     <Setting Name="MainCLIColor" Type="System.Drawing.Color" Scope="User">
-      <Value Profile="(Default)">192, 255, 255</Value>
+      <Value Profile="(Default)">Black</Value>
     </Setting>
     <Setting Name="MainCLIFontSize" Type="System.Single" Scope="User">
       <Value Profile="(Default)">9</Value>
@@ -42,7 +42,7 @@
       <Value Profile="(Default)">True</Value>
     </Setting>
     <Setting Name="Language" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)"></Value>
     </Setting>
   </Settings>
 </SettingsFile>
